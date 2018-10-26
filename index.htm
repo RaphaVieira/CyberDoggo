@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>CyberDoggo</title>
+	<meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            background-color: #000
+        }
+        
+        #console {
+            font-family: courier, monospace;
+            color: #fff;
+            width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            font-size: 14px;
+        }
+        
+        a {
+            color: #0bc;
+            text-decoration: none;
+        }
+        
+        #a {
+            color: #0f0;
+        }
+        
+        #c {
+            color: #0bc;
+        }
+        
+        #b {
+            color: #ff0096;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="console"><span id="a">hguedes@arch64</span>:<span id="b">~</span><span id="c">$</span> cat doggos.txt
+        <p>Welcome to CyberDoggo!!!</p>
+        <p id="blink">|</p>
+    </div>
+    <script>
+        blink = setInterval(function() {
+            element = document.getElementById("blink");
+            element.style.display = element.style.display == "none" ? "block" : "none";
+        }, 500);
+    </script>
+
+</body>
+
+</html>
